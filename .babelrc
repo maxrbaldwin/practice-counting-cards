@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "kyt-react",
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "@components": "./src/components",
+        "@WTC": "./src/components/WhatsTheCount",
+        "@deckUtils": "./src/modules/deckUtils",
+      }
+    }]
+  ]
+}
